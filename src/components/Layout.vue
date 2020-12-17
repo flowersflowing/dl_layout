@@ -40,8 +40,8 @@
         <b-row>
           <b-col cols="6" sm="8" md="4" lg="4" xl="4" v-for="(pers, index) in pers" :key="index"></b-col>
           <b-card>
-            <img :src="pers.img" alt="Imagen" img-top>
-            <b-card-text>{{pers.name}}</b-card-text>
+            <img :src="pers.imagen" alt="Imagen" img-top>
+            <b-card-text>{{pers.nombre}}</b-card-text>
           </b-card>          
         </b-row>
       </b-card-group>      
@@ -56,29 +56,29 @@ export default {
     return {
       pers: [
         {
-          'id': 1,
-          'name': 'Morty Smith',
-          'img': 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
+          id: 1,
+          nombre: 'Morty Smith',
+          imagen: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
         },
         {
-          'id': 2,
-          'name': 'Rick Sánchez',
-          'img': 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
+          id: 2,
+          nombre: 'Rick Sánchez',
+          imagen: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
         },
         {
-          'id': 3,
-          'name': 'Summer Smith',
-          'img': 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
+          id: 3,
+          nombre: 'Summer Smith',
+          imagen: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
         },
         {
-          'id': 4,
-          'name': 'Beth Smith',
-          'img': 'https://rickandmortyapi.com/api/character/avatar/4.jpeg'
+          id: 4,
+          nombre: 'Beth Smith',
+          imagen: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg'
         },
         {
-          'id': 5,
-          'name': 'Jerry Smith',
-          'img': 'https://rickandmortyapi.com/api/character/avatar/5.jpeg'
+          id: 5,
+          nombre: 'Jerry Smith',
+          imagen: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg'
         },
       ]
     }
