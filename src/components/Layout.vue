@@ -35,14 +35,14 @@
       </b-collapse>
     </b-navbar>
 
-    <b-container class="my-5">
+    <b-container class="my-5 bv-example-row">
       <b-card-group>
-        <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
-          <b-card-text>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
-          </b-card-text>
-        </b-card>
+        <b-row>
+          <b-col cols="6" sm="8" md="4" lg="4" xl="4" v-for="(pers, index) in pers" :key="index"></b-col>
+          <b-card img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
+            <b-card-text></b-card-text>
+          </b-card>          
+        </b-row>
       </b-card-group>      
     </b-container>
   </div>
@@ -50,7 +50,38 @@
 
 <script>
 export default {
-  name: 'Layout'
+  name: 'Layout',
+  data() {
+    return {
+      pers: [
+        {
+          id: 1,
+          name: 'Morty Smith',
+          img: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg'
+        },
+        {
+          id: 2,
+          name: 'Rick Sánchez',
+          img: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
+        },
+        {
+          id: 3,
+          name: 'Summer Smith',
+          img: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg'
+        },
+        {
+          id: 4,
+          name: 'Beth Smith',
+          img: 'https://rickandmortyapi.com/api/character/avatar/4.jpeg'
+        },
+        {
+          id: 5,
+          name: 'Jerry Smith',
+          img: 'https://rickandmortyapi.com/api/character/avatar/5.jpeg'
+        },
+      ]
+    }
+  }
 }
 </script>
 
