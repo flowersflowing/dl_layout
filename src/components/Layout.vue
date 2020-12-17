@@ -35,14 +35,16 @@
       </b-collapse>
     </b-navbar>
 
-    <b-card-group>
-      <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
-        <b-card-text>
-          This is a wider card with supporting text below as a natural lead-in to additional content.
-          This content is a little bit longer.
-        </b-card-text>
-      </b-card>
-    </b-card-group>
+    <b-container class="my-5">
+      <b-card-group>
+        <b-card title="Title" img-src="https://placekitten.com/g/300/450" img-alt="Image" img-top>
+          <b-card-text>
+            This is a wider card with supporting text below as a natural lead-in to additional content.
+            This content is a little bit longer.
+          </b-card-text>
+        </b-card>
+      </b-card-group>      
+    </b-container>
   </div>
 </template>
 
