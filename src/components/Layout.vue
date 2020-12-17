@@ -1,14 +1,6 @@
 <template>
   <div>
     <b-navbar toggleable type="light" variant="light">
-      <b-navbar-brand href="#">Mi App</b-navbar-brand>
-
-      <div class="items">
-        <b-nav-item>INICIO</b-nav-item>
-        <b-nav-item>BUSCAR</b-nav-item>
-        <b-nav-item>ACERCA DE</b-nav-item> 
-      </div>
-
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -33,6 +25,14 @@
           </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
+      
+      <b-navbar-brand id="brand" href="#">Mi App</b-navbar-brand>
+
+      <div class="items d-flex justify-content-end">
+        <b-nav-item class="tw">INICIO</b-nav-item>
+        <b-nav-item class="tw">BUSCAR</b-nav-item>
+        <b-nav-item class="tw">ACERCA DE</b-nav-item> 
+      </div>
     </b-navbar>
 
     <b-container class="my-5">
@@ -90,7 +90,11 @@ export default {
 <style scoped lang="scss">
 .items {
   list-style: none;
-  display: flex;
-  justify-content: end;
+  // display: flex;
+  // justify-content: flex-end;
+}
+.nav-link {
+  text-decoration-color: none;
+  color: black;
 }
 </style>
